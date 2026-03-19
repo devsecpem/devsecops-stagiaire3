@@ -25,8 +25,7 @@ jobs:
         steps:
             -uses: actions/checkout@v4
             -name: Run Semgrep
-             run: semgrep scan --config auto --error .
-
+            run: semgrep scan --config auto --error .
     secrets:
         name: Gitleaks - Secrets
         runs-on: ubuntu-latest
